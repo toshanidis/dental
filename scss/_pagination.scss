@@ -1,0 +1,36 @@
+.pagination{
+  &__wrapper{
+    padding-bottom: 40px;
+  }
+  
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__item{
+    margin-left: 8px;
+  }
+
+  &__btn{
+    display: block;
+    background-color: rgba(246, 246, 246, 1);
+    font-size: 20px;
+    line-height: 23px;
+    padding: 14px 17px 9px;
+    color: rgba(187, 187, 187, 1);
+    cursor: pointer;
+    border: none;
+    svg{
+      path{
+        fill: #0096FF;
+      }
+    }
+  }
+  
+}
+.active{
+    background-color: $blue;
+    color: #fff;
+  }

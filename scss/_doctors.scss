@@ -1,0 +1,31 @@
+.doctors{
+  &__wrapper{
+    padding: 57px 0 27px;
+  }
+  &__items{
+    display: flex;
+    align-items: center;
+  }
+  &__item+.doctors__item{
+    margin-left: 50px;
+  }
+  &__item{
+    max-width: 50%;
+    width: 100%;
+  }
+  &__item-title{
+    font-size: 30px;
+    line-height: 64px;
+    @extend %manrope-800;
+    color: #000;
+  }
+  &__item-text{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .specialist__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 85px;
+  }
+}
