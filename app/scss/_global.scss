@@ -1,0 +1,61 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  @extend %manrope-400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $default;
+}
+h2 {
+  @extend %manrope-800;
+  font-size: 36px;
+  line-height: 64px;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 0 10px;
+}
+.footer{
+  margin-top: auto;
+}
+.top{
+  background-color: $blue;
+  text-align: center;
+  padding: 43px 0;
+  &__title{
+    color: #fff;
+    font-size: 29px;
+    line-height: 33px;
+    @extend %manrope-700;
+    margin-bottom: 10px;
+  }
+}
+.breadcrumbs{
+  &__list{
+    display: flex;
+    justify-content: center;
+  }
+  &__item{
+    padding-right: 12px;
+    position: relative;
+    &::after{
+      content: "/";
+      position: absolute;
+      right: 4px;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+    
+  }
+  &__link{
+    color: #222;
+    display: inline-block;
+  }
+}

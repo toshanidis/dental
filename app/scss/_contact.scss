@@ -1,0 +1,138 @@
+.contacts{
+  &__wrapper{
+    padding: 64px 0 84px;
+  }
+  &__item-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item+.contacts__item{
+    margin-left: 20px;
+  }
+  &__item{
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item-title{
+    font-size: 24px;
+    line-height: 35px;
+    color: #000;
+  }
+  &__item-text{
+    color: #666;
+    &-link{
+      color: #666;
+    }
+  }
+  .map-link{
+    color: #FAAD3D;
+    @extend %manrope-700;
+    transition: all .3s;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .mail-link{
+    transition: all .3s;
+    &:hover{
+      color: #FAAD3D;
+    }
+  }
+  .phone-link{
+    transition: all .3s;
+    &:hover{
+      color: #FAAD3D;
+    }
+  }
+  &__map{
+    padding: 75px 0 30px;
+  }
+  #map{
+    width: 100%;
+    height: 500px;
+  }
+  &__feedback{
+    padding: 30px 45px;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 69px;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 840px;
+    width: 100%;
+  } 
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+    &-name,
+    &-email{
+      max-width: 405px;
+      width: 100%;
+    }
+    &-name+.contacts__inner-email{
+      margin-left: 5px;
+    }
+    &-input{
+      width: 100%;
+      background: #F6F6F6;
+      border-radius: 5px;
+      border: none;
+      padding: 14px 10px;
+      border: 1px solid rgba($color: #000000, $alpha: 0.02);
+    }
+  }
+
+  &__input{
+    background: #F6F6F6;
+    border-radius: 5px;
+    border: none;
+    padding: 14px 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid rgba($color: #000000, $alpha: 0.02);
+  }
+
+  &__textarea{
+    padding: 10px;
+    min-height: 150px;
+    background: #F6F6F6;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid rgba($color: #000000, $alpha: 0.02);
+  }
+  
+  &__label{
+    display: block;
+    line-height: 16px;
+    color: #666666;
+    margin-bottom: 13px;
+  }
+
+  &__btn{
+    background-color: $blue;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 5px;
+    padding: 15px 68px;
+    border: none;
+
+  }
+}
